@@ -14,9 +14,10 @@ h1,h2,h3 {
 
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
-  letter-spacing: 5px;
+  text-align: center;
+  letter-spacing: 1px;
   word-spacing: 5px;
-  font-size: 200%;
+  font-size: 250%;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
