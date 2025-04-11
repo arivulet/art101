@@ -1,5 +1,21 @@
 /* we can use a single css file to style all the files in our wwebsite */
 
+@font-face {
+  font-family: 'Chomsky';
+  src: url(fonts/chomsky/Chomsky.woff2) format('woff2'), url(fonts/chomsky/Chomsky.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gunplay";
+  src: url(fonts/gunplay/gunplay.woff2) format('woff2'), url(fonts/gunplay/gunplay.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* you can pick your own background colors, text colors, and fonts */
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
@@ -14,6 +30,7 @@ h1,h2,h3 {
 
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
+  font-family: "Gunplay", sans-serif;
   text-align: center;
   letter-spacing: 1px;
   word-spacing: 5px;
