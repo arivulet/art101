@@ -7,3 +7,20 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+h1 {
+  text-align: center;
+  letter-spacing: 0px;
+  word-spacing: 5px;
+  font-size: 300%;
+  color: aqua;
+}
+
+p {
+  text-indent: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#content {
+  border: dotted 20px #DDD8C4;
+}
