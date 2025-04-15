@@ -24,3 +24,10 @@ p {
 #content {
   border: dotted 20px #DDD8C4;
 }
+
+.photo1lab2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  max-width: 1000px;
+  min-width: 300px;
+}
