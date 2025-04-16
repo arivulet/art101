@@ -1,0 +1,11 @@
+.mainbio {
+    display: inline-block;
+    border: solid 2px darkgrey;
+    background-color: gray;
+    max-width: 40%;
+}
+
+.profilepic {
+    width: 90%;
+
+}

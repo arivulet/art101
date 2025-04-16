@@ -20,7 +20,8 @@
 
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
-  background-color: #50808E;
+  background-color: grey;
+  font-family: sans-serif;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
@@ -34,7 +35,7 @@ h1 {
   text-align: center;
   letter-spacing: 1px;
   word-spacing: 5px;
-  font-size: 250%;
+  font-size: 300%;
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
@@ -55,4 +56,8 @@ h1 {
 
 .secheadings {
   padding-left: 10px;
+}
+
+a {
+  color: black;
 }
