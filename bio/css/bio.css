@@ -1,11 +1,69 @@
+.maininfo {
+	display: flex;
+	max-width: 100%;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.location {
+	display: inline-flex;
+	transition: transform 0.3s;
+}
+
+.location:hover > .homebutton {
+	transform: translate(10px, 0px);
+}
+
+.homebutton {
+	text-decoration: none;
+	display: inline-flex;
+	transition: transform 0.3s;
+}
+
+.homebutton:hover {
+	transform: scale(1.5);
+}
+
 .mainbio {
-    display: inline-block;
-    border: solid 2px darkgrey;
-    background-color: gray;
-    max-width: 40%;
+	border-radius: 25px;
+	border: solid 4px gray;
+	background-color: rgb(171, 171, 171);
+	width: 30%;
+	min-width: 400px;
+	padding: 10px;
+	margin-right: 5px;
+	margin-left: 15px;
 }
 
 .profilepic {
-    width: 90%;
+	width: 80%;
+}
 
+.activitypage {
+	border-radius: 25px;
+	width: 65%;
+	padding: 10px;
+	background-color: rgb(171, 171, 171);
+	border: solid 4px gray;
+}
+
+ul {
+	list-style: none;
+}
+
+.currently {
+	display: flex;
+}
+
+.musicp {
+	text-align: center;
+	width: 50%;
+	border: solid 4px gray;
+	height: 100%;
+}
+
+.gamepl {
+	text-align: center;
+	width: 50%;
+	height: 100%;
 }
