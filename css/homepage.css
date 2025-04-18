@@ -24,6 +24,7 @@
 	text-decoration: none;
 	flex-direction: row;
 	flex-wrap: wrap;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .button {
@@ -35,6 +36,6 @@
 
 .button:hover {
 	transform: scale(1.2);
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
 }
