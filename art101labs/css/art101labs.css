@@ -1,0 +1,14 @@
+.classwork {
+	display: inline-block;
+	width: 300px;
+	height: 300px;
+	background: rgb(171, 171, 171);
+	border-radius: 25px;
+	border: solid darkgray 3px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
