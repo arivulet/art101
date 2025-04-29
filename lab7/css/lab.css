@@ -2,18 +2,8 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-	padding: 10px;
-	margin-bottom: 10px;
-	border: solid 1px #888;
-	background-color: #ddd8c4;
-}
-
-.fsection {
-	display: block;
-	block-size: auto;
-}
-
-img {
-	width: 700px;
-	height: auto;
-}
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
