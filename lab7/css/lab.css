@@ -2,8 +2,29 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+	padding: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #888;
+	background-color: #ddd8c4;
+	display: flexbox;
+	width: 650px;
+	height: 650px;
+	align-items: normal;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#soutput {
+	padding: 10px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+img {
+	display: flexbox;
+	width: 400px;
+}
+
+#cont {
+	display: flexbox;
+	width: 200px;
+}

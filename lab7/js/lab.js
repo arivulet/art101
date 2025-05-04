@@ -1,21 +1,25 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - manipulate an inputted string
+// Author: River Kinley
+// Date: 4 May 2025
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function manipulatorinator() {
+	let userName = prompt(
+		"Please enter your first and last name!",
+		"Percy Jackson"
+	);
+	//split into array
+	let nameArray = userName.split("");
+	//sort the array
+	let sortedArray = nameArray.sort();
+	//convert array into str
+	let sortedName = sortedArray.join("");
+	return sortedName;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
+function displayName() {
+	const sortedName = manipulatorinator();
+	if (sortedName) {
+		document.getElementById("output").innerHTML =
+			"Your sorted name is:" + sortedName + " <br>";
+	}
 }
-
-// let's get this party started
-main();
