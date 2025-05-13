@@ -1,21 +1,11 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - modify some stuff on our page
+// Author: River Kinley
+// Date: 11 May 2025
 
-// Constants
+// declare an button for a copyable object
+$(".minor-section").append("<button>Make Special</button>");
 
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// on click, toggle special class onto the parent of the button
+$(".minor-section button").click(function () {
+	$(this).parent().toggleClass("special");
+});
