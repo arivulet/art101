@@ -2,8 +2,70 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+	border-radius: 15px;
+	padding: 10px;
+	border: solid 5px black;
+	background-color: #ddd8c4;
+}
+
+.minor-section2 {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 15px;
+	padding: 10px;
+	border: solid 5px black;
+	background-color: #ddd8c4;
+}
+
+h2 {
+	font-size: 50pt;
+	font-family: "Gunplay";
+}
+
+p {
+	font-size: 19pt;
+	font-family: "Chomsky";
+}
+
+#container {
+	display: inline-block;
+	min-width: 200px;
+	min-height: 800px;
+	width: 400px;
+	justify-content: center;
+	background-color: white;
+	margin: 10px auto;
+	padding: 0px;
+	border-radius: 15px;
+	border: solid 1px black;
+	max-width: 450px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#containerheader {
+	height: 60px;
+}
+
+#output {
+	min-height: 600px;
+}
+
+button {
+	width: 95%;
+	align-self: center;
+}
+
+.poem p {
+	display: inline-block;
+	max-width: 60%;
+	margin: 3px;
+	padding: 5px 10px;
+	border-radius: 15px;
+	background-color: palegoldenrod;
+	color: black;
+	font-size: 1.2em;
+	text-align: center;
+	font-family: "Chomsky";
+}
