@@ -1,21 +1,34 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - we making fizzbuzz
+// Author: River Kinley
 
-// Constants
+function fizzbuzzboom() {
+	let output = "";
 
-// Functions
+	for (let cur = 1; cur < 201; cur++) {
+		// create var to hold the string we can add to
+		let out = "";
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+		// make things to add string out
+		if (cur % 3 == 0) {
+			out += "Fizz";
+		}
+		if (cur % 5 == 0) {
+			out += "Buzz";
+		}
+		if (cur % 7 == 0) {
+			out += "Boom";
+		}
+
+		if (out == "") {
+			output += cur + ".<br>";
+		} else {
+			output += cur + ". " + out + "!<br>";
+		}
+	}
+	$("#output").html(output);
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// when button click fizz buzz boom
+$("#button").click(function () {
+	fizzbuzzboom();
+});

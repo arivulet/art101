@@ -2,8 +2,25 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+	padding: 10px;
+	margin-bottom: 10px;
+	border: solid 5px black;
+	background-color: #ddd8c4;
+	border-radius: 15px;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+#output {
+	font-family: monospace;
+	margin: 20px;
+	padding: 10px;
+	border: solid 5px black;
+	border-radius: 15px;
+
+	column-count: 4;
+	column-gap: 20px;
+	text-align: left;
+}
