@@ -1,12 +1,34 @@
 .classwork {
-	display: inline-block;
 	width: 300px;
-	height: 300px;
+	height: 200px;
 	background: rgb(171, 171, 171);
 	border-radius: 25px;
-	border: solid darkgray 3px;
+	border: none;
 	padding: 10px;
 	text-decoration: none;
+	margin: 5px;
+	font-family: "Chomsky";
+	font-size: 40px;
+	background: url("../../img/folder-icon.png") no-repeat;
+	background-size: cover;
+	transition-duration: 0.2s;
+}
+
+.classwork:hover {
+	transform: scale(1.2);
+	border: dotted 2px white;
+	border-radius: 2px;
+}
+
+.header {
+	display: flex;
+	justify-self: center;
+}
+
+#classworkcontainer {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 a {

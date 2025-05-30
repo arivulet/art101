@@ -64,3 +64,12 @@ h1 {
 a {
 	color: black;
 }
+
+.header {
+	display: flex;
+	justify-self: center;
+}
+
+a {
+	text-decoration: none;
+}
