@@ -1,21 +1,43 @@
-// index.js - purpose and description here
-// Author: Your Name
+// index.js - use picture of the day to make image
+// Author: River Kinley
 // Date:
 
-// Constants
+$(document).ready(function () {
+	$("#fetch-apod").click(function () {
+		// NASA APOD API endpoint
+		const apiUrl = "https://api.nasa.gov/planetary/apod";
 
-// Functions
+		// using demo key cause this a small lab
+		const apiKey = "DEMO_KEY";
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+		$.ajax({
+			url: apiUrl,
+			method: "GET",
+			data: {
+				api_key: apiKey,
+			},
+			success: function (data) {
+				// display the container
+				$("#apod-container").show();
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+				// set the title
+				$("#apod-title").text(data.title);
 
-// let's get this party started
-main();
+				//set the date
+				$("#apod-date").text(data.date);
+
+				// Handle media (could be image or video)
+				let mediaHtml = "";
+				if (data.media_type === "image") {
+					mediaHtml = `<img id="apod-image" src="${data.url}" alt="${data.title}">`;
+				} else if (data.media_type === "video") {
+					mediaHtml = `<iframe width="560" height="315" src="${data.url}" frameborder="0"></iframe>`;
+				}
+				$("#apod-media").html(mediaHtml);
+			},
+			error: function (error) {
+				alert("Error fetching APOD: " + error.responseText);
+			},
+		});
+	});
+});
