@@ -1,21 +1,24 @@
-// index.js - purpose and description here
-// Author: Your Name
+// index.js
+// Author: River Kinley
 // Date:
 
-// Constants
+$.ajax({
+	url: "https://corsproxy.io/?https://xkcd.com/info.0.json ",
+	type: "GET",
+	dataType: "json",
+	success: function (comicObj) {
+		console.log(comicObj);
+		let title = comicObj.title;
+		let alt = comicObj.alt;
+		let imageUrl = comicObj.img;
 
-// Functions
+		$("#title").text(title);
+		$("#img").attr("src", imageUrl);
+		$("#img").attr("alt", alt);
+		$("#img").attr("title", alt);
+	},
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+	error: function (jqXHR, textStatus, errorThrown) {
+		console.log("Error loading XKCD comic:", textStatus, errorThrown);
+	},
+});
